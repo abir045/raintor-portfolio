@@ -69,7 +69,7 @@ const SkillsSection = () => {
 
           {/* Right side content */}
           <div className="lg:max-w-md">
-            <p className="text-white text-lg leading-relaxed mb-5">
+            <p className="text-white text-lg leading-relaxed mb-5 mt-26">
               Building the worlds best marketing Your trusted partner for
               strategy, design, and dev.
             </p>

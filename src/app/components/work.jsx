@@ -38,77 +38,79 @@ const Work = () => {
   ];
 
   return (
-    <div className="bg-[#141414] text-white py-6 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center mb-18">
-          <div className="flex items-center ">
-            <Image src={down} alt="down nav" />
-            <span className="text-sm font-medium border-2 border-white text-white px-[20px] py-[10px] rounded-[40px]">
-              Work Process
-            </span>
+    <div className="px-4">
+      <div className="bg-[#141414] text-white py-6 px-4 sm:px-6 lg:px-8 rounded-[40px]">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="flex items-center mb-12 mt-22">
+            <div className="flex items-center ">
+              <Image src={down} alt="down nav" />
+              <span className="text-sm font-medium border-2 border-white text-white px-[20px] py-[10px] rounded-[40px]">
+                Work Process
+              </span>
+            </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl lg:text-[58px] font-bold ml-24">
+                My Work Process
+              </h2>
+            </div>
           </div>
-          <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-[58px] font-bold ml-24">
-              My Work Process
-            </h2>
-          </div>
-        </div>
 
-        {/* Process Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {processCards.map((card) => (
-            <div
-              key={card.id}
-              className={`${
-                card.isHighlighted
-                  ? "bg-[#C5FF41] text-black rotate-4"
-                  : "bg-black text-white"
-              } rounded-[30px] p-6 relative`}
-            >
-              <div className={`flex items-center justify-between mb-11`}>
-                <span
-                  className={`${
-                    card.isHighlighted
-                      ? "bg-black text-white text-[20px] px-8 py-2 rounded-[20px]"
-                      : "bg-[#C5FFEE] text-black text-[20px] px-8 py-2 rounded-[20px]"
-                  }`}
-                >
-                  {card.title}
-                </span>
-                <div
-                  className={`flex items-center gap-2 ${
-                    card.isHighlighted
-                      ? "text-gray-700 hover:text-black"
-                      : "text-gray-400 hover:text-white"
-                  } cursor-pointer transition-colors`}
-                >
-                  {card.isHighlighted ? (
-                    <Image src={rightBlack} alt="nav" />
-                  ) : (
-                    <Image src={right} alt="nav" />
-                  )}
-
-                  <span
-                    className={`${
-                      card.isHighlighted ? "text-black" : "text-white"
-                    } text-base  underline`}
-                  >
-                    Read More
-                  </span>
-                </div>
-              </div>
-              <p
+          {/* Process Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {processCards.map((card) => (
+              <div
+                key={card.id}
                 className={`${
                   card.isHighlighted
-                    ? "text-black text-sm"
-                    : "text-white text-lg"
-                } leading-relaxed`}
+                    ? "bg-[#C5FF41] text-black rotate-4"
+                    : "bg-black text-white"
+                } rounded-[30px] p-6 relative`}
               >
-                {card.description}
-              </p>
-            </div>
-          ))}
+                <div className={`flex items-center justify-between mb-11`}>
+                  <span
+                    className={`${
+                      card.isHighlighted
+                        ? "bg-black text-white text-[20px] px-8 py-2 rounded-[20px]"
+                        : "bg-[#C5FFEE] text-black text-[20px] px-8 py-2 rounded-[20px]"
+                    }`}
+                  >
+                    {card.title}
+                  </span>
+                  <div
+                    className={`flex items-center gap-2 ${
+                      card.isHighlighted
+                        ? "text-gray-700 hover:text-black"
+                        : "text-gray-400 hover:text-white"
+                    } cursor-pointer transition-colors`}
+                  >
+                    {card.isHighlighted ? (
+                      <Image src={rightBlack} alt="nav" />
+                    ) : (
+                      <Image src={right} alt="nav" />
+                    )}
+
+                    <span
+                      className={`${
+                        card.isHighlighted ? "text-black" : "text-white"
+                      } text-base  underline`}
+                    >
+                      Read More
+                    </span>
+                  </div>
+                </div>
+                <p
+                  className={`${
+                    card.isHighlighted
+                      ? "text-black text-sm"
+                      : "text-white text-lg"
+                  } leading-relaxed`}
+                >
+                  {card.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
