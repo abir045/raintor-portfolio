@@ -38,11 +38,11 @@ const Work = () => {
   ];
 
   return (
-    <div className="bg-[#141414] text-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-[#141414] text-white py-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex items-center mb-18">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center ">
             <Image src={down} alt="down nav" />
             <span className="text-sm font-medium border-2 border-white text-white px-[20px] py-[10px] rounded-[40px]">
               Work Process

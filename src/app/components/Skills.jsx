@@ -145,9 +145,6 @@ const SkillsSection = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
-          {/* Custom Pagination for Mobile */}
-          {/* <div className="skills-swiper-pagination flex justify-center mt-8 lg:hidden"></div> */}
         </div>
 
         {/* Custom Styles */}

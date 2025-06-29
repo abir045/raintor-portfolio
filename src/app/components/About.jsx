@@ -5,15 +5,14 @@ import companies from "../../../public/images/companies.png";
 
 const About = () => {
   return (
-    <div className="relative min-h-screen bg-gray-100">
+    <div className="relative  bg-gray-100">
       {/* Background gradient image */}
       <div className="absolute inset-0">
         <Image alt="gradient" src={dg} className="" priority />
       </div>
 
-      {/* Content overlay */}
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-16">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Badge */}
           <div className="flex justify-end mb-8">
             <div className="inline-flex items-center">
