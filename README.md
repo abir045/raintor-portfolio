@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Raintor Portfolio
+A modern, responsive portfolio website built with React, Next.js, and Tailwind CSS—designed to showcase projects, skills, and experience in an elegant, performant way.
 
-## Getting Started
+🚀 Features
+Next.js SSR/SSG for fast performance and SEO-friendly pages
 
-First, run the development server:
+Tailwind CSS v4 for utility-first styling, with dark/light mode support
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Responsive design across mobile, tablet, and desktop interfaces
+
+Sections include: Home, About, Portfolio, Blog/Project Showcase
+
+Mobile-friendly menu with smooth opening/closing transitions
+
+Easy-to-customize UI and theming
+
+🛠️ Tech Stack
+Next.js (v15.3.4) – React framework
+
+Tailwind CSS v4 – Styling
+
+React Icons – Icon Packs
+
+Next/Image for optimized asset handling
+
+📂 Project Structure Overview
+
+```
+components/
+ └─ Navbar.tsx  — Navbar with dark mode toggle & mobile menu
+pages/          — Next.js routing
+public/         — Static assets (images, icons)
+styles/         — Global styles & Tailwind config
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚙️ Getting Started
+Clone the repo
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+git clone https://github.com/abir045/raintor-portfolio.git
+cd raintor-portfolio
+Install dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# yarn install
 
-## Learn More
+# or npm install
 
-To learn more about Next.js, take a look at the following resources:
+bash
+Copy
+Edit
+yarn dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# or npm run dev

@@ -9,6 +9,7 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
+
   return (
     <div>
       <nav className="flex items-center justify-between w-full relative dark:bg-slate-900 bg-white rounded-full px-4 sm:px-8 lg:px-[50px] py-4 sm:py-6 lg:py-[28px]">
